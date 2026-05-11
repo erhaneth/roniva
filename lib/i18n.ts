@@ -19,11 +19,17 @@ export function isLocale(value: string): value is Locale {
 export const dictionaries = {
   tr: {
     metadata: {
-      title: "Roniva Tech | AI Otomasyon ve Web Sistemleri",
+      title: "Roniva Tech | Yapay Zeka Otomasyon ve Web Sistemleri",
       description:
-        "Roniva Tech, küçük işletmeler için AI otomasyon, iş akışı sistemleri ve modern web siteleri kurar."
+        "Roniva Tech, küçük işletmeler için Yapay Zeka otomasyon, iş akışı sistemleri ve modern web siteleri kurar."
+    },
+    "Yapay Zeka entegrasyonu": {
+      title: "Roniva Tech | Yapay Zeka Otomasyon ve Web Sistemleri",
+      description:
+        "Roniva Tech, küçük işletmeler için Yapay Zeka otomasyon, iş akışı sistemleri ve modern web siteleri kurar."
     },
     nav: {
+      home: "Anasayfa",
       services: "Hizmetler",
       work: "Projeler",
       process: "Süreç",
@@ -32,21 +38,27 @@ export const dictionaries = {
       contact: "İletişim"
     },
     hero: {
-      headline: "AI otomasyon ve modern web siteleriyle işinizi büyütün.",
+      headline: "İşinize özel yapay zeka ve modern web çözümleri sunuyoruz",
       body:
-        "Roniva Tech, küçük işletmeler için hızlı web siteleri, akıllı otomasyonlar ve sade iş sistemleri kurar.",
+        "Roniva Tech, küçük/büyük işletmelerin dijital büyümesi için hızlı web siteleri, akıllı otomasyonlar ve sade iş sistemleri sunar",
       primaryCta: "Görüşme al",
-      proof: "Web siteleri • AI otomasyon • İş akışı sistemleri"
+      proof: [
+        "Yapay Zeka Otomasyon",
+        "Kurumsal Web Siteleri",
+        "İş Akışı Sistemleri",
+        "Lead Yönetimi",
+        "Dijital Dönüşüm"
+      ]
     },
     whatsapp: {
       label: "WhatsApp",
       contactCta: "WhatsApp ile yaz",
       message:
-        "Merhaba Roniva Tech, işletmem için web sitesi veya AI otomasyon hakkında bilgi almak istiyorum."
+        "Merhaba Roniva Tech, işletmem için web sitesi veya Yapay Zeka otomasyon hakkında bilgi almak istiyorum."
     },
     trust: {
       eyebrow: "Daha az karmaşa, daha net sistem",
-      items: ["AI otomasyon", "Modern web", "SaaS altyapı", "Lead sistemleri"]
+      items: ["Yapay Zeka otomasyon", "Modern web", "SaaS altyapı", "Lead sistemleri"]
     },
     services: {
       eyebrow: "Hizmetler",
@@ -54,7 +66,7 @@ export const dictionaries = {
       body: "Web, otomasyon ve yazılımı tek stratejide topluyoruz.",
       items: [
         {
-          title: "AI otomasyon",
+          title: "Yapay Zeka otomasyon",
           description: "Tekrarlayan işleri azaltan asistanlar ve akıllı akışlar.",
           stat: "Daha az manuel iş"
         },
@@ -69,8 +81,8 @@ export const dictionaries = {
           stat: "Lansmana hazır ürün"
         },
         {
-          title: "AI entegrasyonları",
-          description: "Mevcut araçlarınıza AI özellikleri ve veri akışları ekleriz.",
+          title: "Yapay Zeka entegrasyonları",
+          description: "Mevcut araçlarınıza Yapay Zeka özellikleri ve veri akışları ekleriz.",
           stat: "Daha akıllı araçlar"
         },
         {
@@ -162,7 +174,7 @@ export const dictionaries = {
       body: "Görüşmede web sitenizi, müşteri akışınızı ve otomasyon fırsatlarını birlikte inceleriz.",
       primaryCta: "Danışmanlık al",
       secondaryCta: "Hizmetleri gör",
-      bullets: ["Web incelemesi", "Süreç haritası", "AI fırsatları", "Öncelikli yol haritası"],
+      bullets: ["Web incelemesi", "Süreç haritası", "Yapay Zeka fırsatları", "Öncelikli yol haritası"],
       plans: [
         { label: "Analiz", value: "Strateji görüşmesi" },
         { label: "Kurulum", value: "Web + otomasyon" },
@@ -174,8 +186,8 @@ export const dictionaries = {
       origin: "Diyarbakir",
       title: "Diyarbakır’dan doğan modern teknoloji stüdyosu.",
       body:
-        "Roniva Tech, Diyarbakır’da küçük işletmelerin dijitalde daha güçlü görünmesi ve günlük işlerini daha az manuel yükle yönetmesi için kuruldu. İlk fikir; iyi hizmet veren yerel işletmelerin eski web siteleri, dağınık formlar ve kopuk takip süreçleri yüzünden potansiyel müşterileri kaçırdığını görmekten çıktı. Bugün tasarım, web geliştirme, AI otomasyon ve iş akışı sistemlerini tek bir stratejide birleştirerek daha güven veren, daha düzenli ve büyümeye hazır dijital altyapılar kuruyoruz.",
-      cardText: "Diyarbakır’dan AI, web ve iş sistemleri.",
+        "Roniva Tech, Diyarbakır’da küçük işletmelerin dijitalde daha güçlü görünmesi ve günlük işlerini daha az manuel yükle yönetmesi için kuruldu. İlk fikir; iyi hizmet veren yerel işletmelerin eski web siteleri, dağınık formlar ve kopuk takip süreçleri yüzünden potansiyel müşterileri kaçırdığını görmekten çıktı. Bugün tasarım, web geliştirme, Yapay Zeka otomasyon ve iş akışı sistemlerini tek bir stratejide birleştirerek daha güven veren, daha düzenli ve büyümeye hazır dijital altyapılar kuruyoruz.",
+      cardText: "Diyarbakır’dan Yapay Zeka, web ve iş sistemleri.",
       principles: ["Strateji", "Tasarım", "Otomasyon", "Büyüme"]
     },
     contact: {
@@ -191,12 +203,12 @@ export const dictionaries = {
       namePlaceholder: "Adınız",
       emailPlaceholder: "siz@sirket.com",
       companyPlaceholder: "Şirket adı",
-      messagePlaceholder: "Web sitesi, AI otomasyon, CRM, SaaS MVP...",
+      messagePlaceholder: "Web sitesi, Yapay Zeka otomasyon, CRM, SaaS MVP...",
       submit: "Gönder",
       note: "E-posta: hello@ronivatech.com"
     },
     footer: {
-      line: "Küçük işletmeler için AI otomasyon, web ve iş akışı sistemleri.",
+      line: "Küçük işletmeler için Yapay Zeka otomasyon, web ve iş akışı sistemleri.",
       rights: "Tüm hakları saklıdır."
     }
   },
@@ -206,7 +218,13 @@ export const dictionaries = {
       description:
         "Roniva Tech ji bo karsaziyên biçûk otomasyona AI, malperên nûjen û pergalên xebatê ava dike."
     },
+    "Yapay Zeka entegrasyonu": {
+      title: "Roniva Tech | AI, Malper û Pergalên Xebatê",
+      description:
+        "Roniva Tech ji bo karsaziyên biçûk otomasyona AI, malperên nûjen û pergalên xebatê ava dike."
+    },
     nav: {
+      home: "Serî",
       services: "Xizmet",
       work: "Projeler",
       process: "Pêvajo",
@@ -215,10 +233,16 @@ export const dictionaries = {
       contact: "Têkilî"
     },
     hero: {
-      headline: "Bi AI û malperên nûjen karsaziya xwe mezin bike.",
+      headline: "Bi Yapay Zeka entegrasyonu û malperên nûjen karsaziya xwe mezin bike.",
       body: "Roniva Tech ji bo karsaziyên biçûk malper, otomasyon û pergalên sade ava dike.",
       primaryCta: "Hevdîtinê veqetîne",
-      proof: "Malper • AI otomasyon • Pergalên xebatê"
+      proof: [
+        "AI otomasyon",
+        "Malperên kurumsal",
+        "Pergalên xebatê",
+        "Rêveberiya leadan",
+        "Guhertina dijîtal"
+      ]
     },
     whatsapp: {
       label: "WhatsApp",

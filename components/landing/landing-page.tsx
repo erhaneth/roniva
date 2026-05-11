@@ -1,6 +1,5 @@
 import { SiteHeader } from "@/components/site-header";
 import { AboutSection } from "@/components/landing/about-section";
-import { ConsultationSection } from "@/components/landing/consultation-section";
 import { ContactSection } from "@/components/landing/contact-section";
 import { Footer } from "@/components/landing/footer";
 import { HeroSection } from "@/components/landing/hero-section";
@@ -13,14 +12,13 @@ import type { LandingPageProps } from "@/components/landing/types";
 export function LandingPage({ locale, dictionary: t }: LandingPageProps) {
   return (
     <>
-      <SiteHeader locale={locale} nav={t.nav} cta={t.hero.primaryCta} whatsapp={t.whatsapp} />
+      <SiteHeader locale={locale} nav={t.nav} whatsapp={t.whatsapp} />
       <main id="top" className="overflow-hidden">
         <HeroSection locale={locale} t={t} />
+        <ProcessSection locale={locale} t={t} />
         <ServicesSection t={t} />
         <PortfolioSection t={t} />
         <TestimonialsSection t={t} />
-        <ProcessSection t={t} />
-        <ConsultationSection locale={locale} t={t} />
         <AboutSection t={t} />
         <ContactSection t={t} />
       </main>

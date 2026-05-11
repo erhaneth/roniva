@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { RonivaWordmark } from "@/components/roniva-wordmark";
 import { WhatsAppButton } from "@/components/whatsapp-button";
@@ -17,20 +17,19 @@ import {
 type SiteHeaderProps = {
   locale: Locale;
   nav: Dictionary["nav"];
-  cta: string;
   whatsapp: Dictionary["whatsapp"];
 };
 
 const navTargets = [
+  ["home", "top"],
+  ["process", "process"],
   ["services", "services"],
   ["work", "work"],
-  ["process", "process"],
-  ["pricing", "pricing"],
   ["about", "about"],
   ["contact", "contact"]
 ] as const;
 
-export function SiteHeader({ locale, nav, cta, whatsapp }: SiteHeaderProps) {
+export function SiteHeader({ locale, nav, whatsapp }: SiteHeaderProps) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -110,17 +109,9 @@ export function SiteHeader({ locale, nav, cta, whatsapp }: SiteHeaderProps) {
               </Link>
             ))}
           </nav>
-          <div className="mt-4 flex flex-col gap-3 border-t border-black/10 pt-4">
+          <div className="mt-4 flex flex-col items-center gap-3 border-t border-black/10 pt-4">
             <LanguageLinks locale={locale} fullWidth />
             <WhatsAppButton label={whatsapp.contactCta} message={whatsapp.message} fullWidth />
-            <Link
-              href={`/${locale}#contact`}
-              className="inline-flex items-center justify-center gap-2 rounded-[8px] bg-black px-4 py-3 text-sm font-semibold text-white"
-              onClick={closeMenu}
-            >
-              {cta}
-              <ArrowRight aria-hidden="true" className="h-4 w-4" />
-            </Link>
           </div>
         </div>
       ) : null}
@@ -131,8 +122,8 @@ export function SiteHeader({ locale, nav, cta, whatsapp }: SiteHeaderProps) {
 function LanguageLinks({ locale, fullWidth = false }: { locale: Locale; fullWidth?: boolean }) {
   return (
     <div
-      className={`grid grid-cols-2 rounded-[8px] border border-black/10 bg-black/[0.03] p-1 ${
-        fullWidth ? "w-full" : ""
+      className={`inline-grid grid-cols-2 rounded-full border border-black/10 bg-[#f4f4f4] p-0.5 shadow-inner shadow-black/[0.04] ${
+        fullWidth ? "mx-auto w-fit" : ""
       }`}
       aria-label="Language selector"
     >
@@ -142,10 +133,10 @@ function LanguageLinks({ locale, fullWidth = false }: { locale: Locale; fullWidt
           href={`/${item}`}
           aria-current={locale === item ? "page" : undefined}
           title={localeNames[item]}
-          className={`rounded-[6px] px-2.5 py-1.5 text-center text-xs font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black ${
+          className={`min-w-10 rounded-full px-3 py-1 text-center text-[11px] font-semibold uppercase tracking-[0.08em] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black ${
             locale === item
-              ? "bg-white text-black shadow-sm ring-1 ring-black/10"
-              : "text-black/55 hover:bg-white/70 hover:text-black"
+              ? "bg-black text-white shadow-sm"
+              : "text-black/50 hover:bg-white hover:text-black"
           }`}
         >
           {localeShortNames[item]}

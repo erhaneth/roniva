@@ -5,23 +5,16 @@ import type { LandingSectionProps } from "@/components/landing/types";
 export function AboutSection({ t }: LandingSectionProps) {
   return (
     <section id="about" className={`bg-[#f7f7f7] ${pageSectionClass}`}>
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:px-8">
-        <div className="relative flex min-h-[320px] items-center justify-center overflow-hidden rounded-[8px] border border-black/10 bg-white p-8 shadow-2xl shadow-black/[0.08] lg:min-h-[380px]">
-          <div
-            className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,0,0,0.045),rgba(255,255,255,0)_46%)]"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute inset-0 opacity-55 [background-image:linear-gradient(rgba(0,0,0,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.055)_1px,transparent_1px)] [background-size:52px_52px]"
-            aria-hidden="true"
-          />
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:px-8">
+        <div className="relative min-h-[420px] overflow-hidden rounded-[8px] border border-black/10 bg-black shadow-2xl shadow-black/[0.10] lg:min-h-[620px]">
           <Image
-            src="/roniva-full-logo.png"
-            alt="Roniva Tech"
-            width={1254}
-            height={1254}
-            className="relative z-10 h-auto w-[min(88%,30rem)] object-contain drop-shadow-[0_24px_70px_rgba(0,0,0,0.12)]"
+            src="/images/about.png"
+            alt="Roniva Tech studio interior"
+            fill
+            sizes="(min-width: 1024px) 47vw, 100vw"
+            className="h-full w-full object-cover object-[58%_50%]"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/22 via-transparent to-black/8" aria-hidden="true" />
         </div>
         <div>
           <p className="text-sm font-semibold text-black/50">{t.about.eyebrow}</p>

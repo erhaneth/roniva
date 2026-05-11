@@ -7,19 +7,19 @@ type SectionIntroProps = {
 
 export function SectionIntro({ eyebrow, title, body, inverted = false }: SectionIntroProps) {
   return (
-    <div className="max-w-3xl">
+    <div className="max-w-2xl">
       <p className={`text-sm font-semibold ${inverted ? "text-[#7cffcb]" : "text-black/50"}`}>
         {eyebrow}
       </p>
       <h2
-        className={`mt-4 text-3xl font-semibold leading-tight sm:text-5xl ${
+        className={`mt-3 text-3xl font-semibold leading-tight sm:text-5xl ${
           inverted ? "text-white" : "text-black"
         }`}
       >
         {title}
       </h2>
       {body ? (
-        <p className={`mt-5 text-base leading-8 ${inverted ? "text-white/62" : "text-black/64"}`}>
+        <p className={`mt-4 text-base leading-7 ${inverted ? "text-white/62" : "text-black/64"}`}>
           {body}
         </p>
       ) : null}

@@ -17,11 +17,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params;
   const safeLocale: Locale = isLocale(locale) ? locale : "tr";
   const t = dictionaries[safeLocale];
+  const metadata = t["Yapay Zeka entegrasyonu"] ?? t.metadata;
 
   return {
     metadataBase: new URL(siteUrl),
-    title: t.metadata.title,
-    description: t.metadata.description,
+    title: metadata.title,
+    description: metadata.description,
     alternates: {
       canonical: `/${safeLocale}`,
       languages: {
@@ -30,8 +31,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       }
     },
     openGraph: {
-      title: t.metadata.title,
-      description: t.metadata.description,
+      title: metadata.title,
+      description: metadata.description,
       url: `/${safeLocale}`,
       siteName: "Roniva Tech",
       images: [
@@ -47,8 +48,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: "summary",
-      title: t.metadata.title,
-      description: t.metadata.description,
+      title: metadata.title,
+      description: metadata.description,
       images: ["/apple-touch-icon.png"]
     },
     icons: {
