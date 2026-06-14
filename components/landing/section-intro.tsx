@@ -1,18 +1,14 @@
 type SectionIntroProps = {
-  eyebrow: string;
   title: string;
   body?: string;
   inverted?: boolean;
 };
 
-export function SectionIntro({ eyebrow, title, body, inverted = false }: SectionIntroProps) {
+export function SectionIntro({ title, body, inverted = false }: SectionIntroProps) {
   return (
     <div className="max-w-2xl">
-      <p className={`text-sm font-semibold ${inverted ? "text-[#7cffcb]" : "text-black/50"}`}>
-        {eyebrow}
-      </p>
       <h2
-        className={`mt-3 text-3xl font-semibold leading-tight sm:text-5xl ${
+        className={`text-3xl font-semibold leading-tight sm:text-5xl ${
           inverted ? "text-white" : "text-black"
         }`}
       >

@@ -21,12 +21,18 @@ export const dictionaries = {
     metadata: {
       title: "Roniva Tech | Yapay Zeka Otomasyon ve Web Sistemleri",
       description:
-        "Roniva Tech, küçük işletmeler için Yapay Zeka otomasyon, iş akışı sistemleri ve modern web siteleri kurar."
+        "Roniva Tech, küçük işletmeler için Yapay Zeka otomasyon, iş akışı sistemleri ve modern web siteleri kurar.",
+      keywords: [
+        "yapay zeka otomasyon",
+        "web sitesi tasarımı",
+        "Diyarbakır yazılım",
+        "iş akışı otomasyonu",
+        "SaaS geliştirme",
+        "kurumsal web sitesi"
+      ]
     },
-    "Yapay Zeka entegrasyonu": {
-      title: "Roniva Tech | Yapay Zeka Otomasyon ve Web Sistemleri",
-      description:
-        "Roniva Tech, küçük işletmeler için Yapay Zeka otomasyon, iş akışı sistemleri ve modern web siteleri kurar."
+    a11y: {
+      skipToContent: "İçeriğe geç"
     },
     nav: {
       home: "Anasayfa",
@@ -38,16 +44,22 @@ export const dictionaries = {
       contact: "İletişim"
     },
     hero: {
-      headline: "İşinize özel yapay zeka ve modern web çözümleri sunuyoruz",
+      headline:"Yapay zeka ve güçlü web siteleriyle işinizi bir üst seviyeye taşıyoruz",
       body:
         "Roniva Tech, küçük/büyük işletmelerin dijital büyümesi için hızlı web siteleri, akıllı otomasyonlar ve sade iş sistemleri sunar",
-      primaryCta: "Görüşme al",
+      primaryCta: "İletişime geç",
+      secondaryCta: "Hizmetleri gör",
       proof: [
         "Yapay Zeka Otomasyon",
         "Kurumsal Web Siteleri",
         "İş Akışı Sistemleri",
         "Lead Yönetimi",
         "Dijital Dönüşüm"
+      ],
+      stats: [
+        { value: "24 saat", label: "ilk yanıt süresi" },
+        { value: "2-4 hafta", label: "ortalama lansman süresi" },
+        { value: "2 dil", label: "Türkçe & Kurmancî hizmet" }
       ]
     },
     whatsapp: {
@@ -104,6 +116,7 @@ export const dictionaries = {
       items: [
         {
           name: "Avukat Ali Gümüş",
+          href: null,
           type: "Avukat web sitesi",
           result: "Profesyonel hukuk imajı",
           description: "Uzmanlık alanlarını net anlatan, güven veren ve danışma talebi oluşturan web sitesi.",
@@ -111,6 +124,7 @@ export const dictionaries = {
         },
         {
           name: "Gümüştay İnşaat",
+          href: null,
           type: "Kurumsal inşaat sitesi",
           result: "Güçlü marka sunumu",
           description: "Projeleri, hizmetleri ve teklif taleplerini sade bir kurumsal yapıda topladık.",
@@ -118,6 +132,7 @@ export const dictionaries = {
         },
         {
           name: "Altınay Güzellik Merkezi",
+          href: "https://xn--altnaygzellik-2ob40f.com/",
           type: "Güzellik merkezi sitesi",
           result: "Daha kolay randevu",
           description: "Hizmetleri öne çıkaran, mobilde hızlı çalışan ve randevuya yönlendiren deneyim.",
@@ -170,11 +185,12 @@ export const dictionaries = {
     },
     pricing: {
       eyebrow: "Danışmanlık",
-      title: "İlk adım: net bir büyüme ve otomasyon planı.",
-      body: "Görüşmede web sitenizi, müşteri akışınızı ve otomasyon fırsatlarını birlikte inceleriz.",
+      title: "İlk adım: işletmeniz için net bir dijital büyüme planı.",
+      body: "Görüşmede mevcut durumunuzu, müşteri akışınızı ve otomasyon fırsatlarını birlikte inceleriz.",
+      note: "Amacımız önce neyin gerçekten işe yarayacağını görmek, sonra sade ve uygulanabilir bir sistem kurmak.",
       primaryCta: "Danışmanlık al",
       secondaryCta: "Hizmetleri gör",
-      bullets: ["Web incelemesi", "Süreç haritası", "Yapay Zeka fırsatları", "Öncelikli yol haritası"],
+      bullets: ["Mevcut durum incelemesi", "Süreç haritası", "Yapay Zeka fırsatları", "Öncelikli yol haritası"],
       plans: [
         { label: "Analiz", value: "Strateji görüşmesi" },
         { label: "Kurulum", value: "Web + otomasyon" },
@@ -184,11 +200,67 @@ export const dictionaries = {
     about: {
       eyebrow: "Roniva Tech",
       origin: "Diyarbakir",
-      title: "Diyarbakır’dan doğan modern teknoloji stüdyosu.",
-      body:
-        "Roniva Tech, Diyarbakır’da küçük işletmelerin dijitalde daha güçlü görünmesi ve günlük işlerini daha az manuel yükle yönetmesi için kuruldu. İlk fikir; iyi hizmet veren yerel işletmelerin eski web siteleri, dağınık formlar ve kopuk takip süreçleri yüzünden potansiyel müşterileri kaçırdığını görmekten çıktı. Bugün tasarım, web geliştirme, Yapay Zeka otomasyon ve iş akışı sistemlerini tek bir stratejide birleştirerek daha güven veren, daha düzenli ve büyümeye hazır dijital altyapılar kuruyoruz.",
+      title: "Yerel işletmeleri dijital çağda güçlendiriyoruz.",
+      body: [
+        "Roniva Tech, Diyarbakır merkezli modern bir teknoloji stüdyosudur.",
+        "Misyonumuz, küçük ve yerel işletmelerin dijital dünyada hak ettikleri profesyonel duruşa kavuşmasını sağlamak.",
+        "Eskimiş web siteleri, dağınık formlar ve kopuk süreçlerin yarattığı kayıpları ortadan kaldırmak için tasarım, web geliştirme, yapay zeka otomasyonu ve iş akışı sistemlerini tek bir bütünleşik stratejide topluyoruz.",
+        "Sonuç; daha güvenilir, daha düzenli ve büyümeye hazır bir dijital altyapı."
+      ],
       cardText: "Diyarbakır’dan Yapay Zeka, web ve iş sistemleri.",
       principles: ["Strateji", "Tasarım", "Otomasyon", "Büyüme"]
+    },
+    faq: {
+      eyebrow: "SSS",
+      title: "Merak edilenler.",
+      body: "Görüşmeden önce en çok sorulan sorular.",
+      items: [
+        {
+          question: "Bir proje genellikle ne kadar sürer?",
+          answer:
+            "Kurumsal web siteleri çoğunlukla 2-4 hafta içinde yayında olur. Otomasyon ve SaaS projelerinde kapsamı ilk görüşmede netleştirir, sprint bazlı ilerleriz."
+        },
+        {
+          question: "Fiyatlandırma nasıl çalışıyor?",
+          answer:
+            "Kapsamı birlikte netleştirir, sabit ve net bir teklif veririz. İlk görüşme ücretsizdir; süreç boyunca sürpriz maliyet çıkmaz."
+        },
+        {
+          question: "Yapay Zeka otomasyonu benim işletmeme uygun mu?",
+          answer:
+            "Tekrarlayan mesajlar, formlar, randevular veya takip işleriniz varsa evet. Görüşmede hangi adımların otomatikleşebileceğini birlikte çıkarırız."
+        },
+        {
+          question: "Yayına aldıktan sonra destek veriyor musunuz?",
+          answer:
+            "Evet. Bakım, içerik güncellemeleri ve yeni özellikler için yanınızdayız; WhatsApp üzerinden hızlıca ulaşabilirsiniz."
+        },
+        {
+          question: "İlk görüşme nasıl ilerliyor?",
+          answer:
+            "30 dakikalık ücretsiz bir ön görüşme yaparız: mevcut durumunuzu inceler, öncelikleri belirler ve net bir yol haritası çıkarırız."
+        },
+        {
+          question: "Mevcut web sitemi yenileyebilir misiniz?",
+          answer:
+            "Evet. Mevcut sitenizin hızını, mesajını, mobil deneyimini ve talep akışını inceler; gerekiyorsa aynı marka diliyle daha güçlü bir yapıya taşırız."
+        },
+        {
+          question: "Otomasyonlar hangi araçlarla çalışır?",
+          answer:
+            "Kullandığınız form, CRM, e-posta, WhatsApp, takvim ve raporlama araçlarına göre kurulum yaparız. Amaç yeni karmaşa eklemek değil, mevcut işi sadeleştirmektir."
+        },
+        {
+          question: "İçerik ve metinleri siz hazırlıyor musunuz?",
+          answer:
+            "Evet. Hizmetlerinizi, hedef kitlenizi ve güven unsurlarınızı netleştirip web sitesi metinlerini dönüşüm odaklı şekilde hazırlarız."
+        },
+        {
+          question: "Sadece WhatsApp üzerinden ilerleyebilir miyiz?",
+          answer:
+            "Evet. İlk temas, hızlı sorular ve kısa güncellemeler için WhatsApp kullanabiliriz. Proje kararlarını ise net ve takip edilebilir şekilde özetleriz."
+        }
+      ]
     },
     contact: {
       eyebrow: "İletişim",
@@ -196,6 +268,24 @@ export const dictionaries = {
       body: "İşletmenizi ve ihtiyacınızı yazın. Size net sonraki adımlarla dönelim.",
       call: "30 dakikalık görüşme",
       roadmap: "Net otomasyon planı",
+      servicesTitle: "Neler için yazabilirsiniz?",
+      services: [
+        {
+          title: "Web Geliştirme",
+          description:
+            "İhtiyaçlarınıza özel, hızlı ve mobil uyumlu kurumsal web siteleri."
+        },
+        {
+          title: "Kurumsal Kimlik",
+          description:
+            "Markanızın karakterini yansıtan renk, tipografi ve görsel kimlik sistemi."
+        },
+        {
+          title: "Yapay Zeka Otomasyon",
+          description:
+            "Tekrarlayan işleri azaltan, müşteri akışını düzenleyen akıllı sistemler."
+        }
+      ],
       name: "Ad Soyad",
       email: "E-posta",
       company: "Şirket",
@@ -205,10 +295,15 @@ export const dictionaries = {
       companyPlaceholder: "Şirket adı",
       messagePlaceholder: "Web sitesi, Yapay Zeka otomasyon, CRM, SaaS MVP...",
       submit: "Gönder",
-      note: "E-posta: hello@ronivatech.com"
+      formIntro: "Merhaba Roniva Tech! Görüşme talebi:",
+      formHint: "Gönder’e bastığınızda mesajınız WhatsApp’ta hazırlanır.",
+      note: "E-posta: ronivatech21@gmail.com"
     },
     footer: {
       line: "Küçük işletmeler için Yapay Zeka otomasyon, web ve iş akışı sistemleri.",
+      navHeading: "Sayfalar",
+      contactHeading: "İletişim",
+      location: "Diyarbakır, Türkiye",
       rights: "Tüm hakları saklıdır."
     }
   },
@@ -216,12 +311,18 @@ export const dictionaries = {
     metadata: {
       title: "Roniva Tech | AI, Malper û Pergalên Xebatê",
       description:
-        "Roniva Tech ji bo karsaziyên biçûk otomasyona AI, malperên nûjen û pergalên xebatê ava dike."
+        "Roniva Tech ji bo karsaziyên biçûk otomasyona AI, malperên nûjen û pergalên xebatê ava dike.",
+      keywords: [
+        "otomasyona AI",
+        "sêwirana malperê",
+        "malpera kurumsal",
+        "pergalên xebatê",
+        "SaaS",
+        "Diyarbakir software"
+      ]
     },
-    "Yapay Zeka entegrasyonu": {
-      title: "Roniva Tech | AI, Malper û Pergalên Xebatê",
-      description:
-        "Roniva Tech ji bo karsaziyên biçûk otomasyona AI, malperên nûjen û pergalên xebatê ava dike."
+    a11y: {
+      skipToContent: "Here naverokê"
     },
     nav: {
       home: "Serî",
@@ -233,15 +334,21 @@ export const dictionaries = {
       contact: "Têkilî"
     },
     hero: {
-      headline: "Bi Yapay Zeka entegrasyonu û malperên nûjen karsaziya xwe mezin bike.",
+      headline: "Bi otomasyona AI û malperên nûjen karsaziya xwe mezin bike.",
       body: "Roniva Tech ji bo karsaziyên biçûk malper, otomasyon û pergalên sade ava dike.",
       primaryCta: "Hevdîtinê veqetîne",
+      secondaryCta: "Xizmetan bibîne",
       proof: [
         "AI otomasyon",
         "Malperên kurumsal",
         "Pergalên xebatê",
         "Rêveberiya leadan",
         "Guhertina dijîtal"
+      ],
+      stats: [
+        { value: "24 saet", label: "dema bersiva yekem" },
+        { value: "2-4 hefte", label: "dema launchê ya navîn" },
+        { value: "2 ziman", label: "xizmet bi Tirkî û Kurmancî" }
       ]
     },
     whatsapp: {
@@ -298,6 +405,7 @@ export const dictionaries = {
       items: [
         {
           name: "Avukat Ali Gümüş",
+          href: null,
           type: "Malpera parêzeriyê",
           result: "Xuyabûna pîşeyî",
           description: "Malperek bawer ku qadên pisporiyê zelal nîşan dide û daxwaza şêwirmendiyê çêdike.",
@@ -305,6 +413,7 @@ export const dictionaries = {
         },
         {
           name: "Gümüştay İnşaat",
+          href: null,
           type: "Malpera şirketê",
           result: "Pêşkêşkirina marka xurt",
           description: "Proje, xizmet û daxwazên teklifê di avahiyeke kurumsal û sade de kom kirin.",
@@ -312,6 +421,7 @@ export const dictionaries = {
         },
         {
           name: "Altınay Güzellik Merkezi",
+          href: "https://xn--altnaygzellik-2ob40f.com/",
           type: "Malpera navenda xweşikiyê",
           result: "Rezervasyona hêsantir",
           description: "Tajrûbeyek bilez a mobil ku xizmetan derdixe pêş û mişteriyan ber bi rezervasyonê ve dibe.",
@@ -364,11 +474,12 @@ export const dictionaries = {
     },
     pricing: {
       eyebrow: "Şêwirmendî",
-      title: "Gava yekem: plana zelal a mezinbûnê.",
-      body: "Em malper, rêya mişterî û firsendên otomasyonê bi hev re dinêrin.",
+      title: "Gava yekem: planeke zelal ji bo mezinbûna dîjîtal.",
+      body: "Em rewşa niha, rêya mişterî û firsendên otomasyonê bi hev re dinêrin.",
+      note: "Armanca me ew e ku em pêşî bibînin ka çi bi rastî dixebite, paşê pergaleke sade û pêkan ava bikin.",
       primaryCta: "Şêwirmendî bistîne",
       secondaryCta: "Xizmetan bibîne",
-      bullets: ["Vekolîna malperê", "Nexşeya pêvajoyê", "Firsendên AI", "Rêxistina pêşîniyan"],
+      bullets: ["Vekolîna rewşa niha", "Nexşeya pêvajoyê", "Firsendên AI", "Rêxistina pêşîniyan"],
       plans: [
         { label: "Analîz", value: "Hevdîtina stratejiyê" },
         { label: "Avakirin", value: "Malper + otomasyon" },
@@ -378,11 +489,67 @@ export const dictionaries = {
     about: {
       eyebrow: "Roniva Tech",
       origin: "Diyarbakir",
-      title: "Stûdyoya teknolojiyê ya ji Diyarbakirê.",
-      body:
-        "Roniva Tech li Diyarbakirê hate damezrandin da ku karsaziyên biçûk di dîjîtalê de xurtir xuya bikin û karên rojane bi kêmtir barê destan bi rê ve bibin. Fikra yekem ji wê rastiyê hat ku gelek karsaziyên herêmî xizmeteke baş didin, lê ji ber malperên kevn, formên belav û şopandina qut qut mişteriyên nû winda dikin. Îro em design, pêşxistina web, AI otomasyon û pergalên xebatê di yek stratejiyê de tînin hev da ku bingehek dîjîtal a bawer, rêkûpêk û amade ji bo mezinbûnê ava bikin.",
+      title: "Em karsaziyên herêmî di serdema dîjîtal de xurt dikin.",
+      body: [
+        "Roniva Tech stûdyoyeke teknolojiyê ya nûjen e ku navenda wê Diyarbakir e.",
+        "Misyona me ew e ku karsaziyên biçûk û herêmî di cîhana dîjîtal de xuyabûneke pîşeyî û hêjayî bistînin.",
+        "Ji bo windahiyên ku ji malperên kevn, formên belav û pêvajoyên qut qut derdikevin kêm bikin, em design, pêşxistina webê, otomasyona AI û pergalên xebatê di yek stratejiyeke yekgirtî de kom dikin.",
+        "Encam; bingehek dîjîtal a bawertir, rêkûpêktir û amade ji bo mezinbûnê."
+      ],
       cardText: "Ji Diyarbakirê AI, malper û pergalên xebatê.",
       principles: ["Stratejî", "Design", "Otomasyon", "Mezinbûn"]
+    },
+    faq: {
+      eyebrow: "Pirsên Berbelav",
+      title: "Pirsên we.",
+      body: "Pirsên ku berî hevdîtinê herî zêde tên kirin.",
+      items: [
+        {
+          question: "Projeyek bi gelemperî çiqas dom dike?",
+          answer:
+            "Malperên kurumsal bi piranî di 2-4 hefteyan de têne weşandin. Ji bo otomasyon û SaaS, em qadê di hevdîtina yekem de zelal dikin û gav bi gav pêş ve diçin."
+        },
+        {
+          question: "Biha çawa dixebite?",
+          answer:
+            "Em qadê bi hev re zelal dikin û teklîfeke sabît û net didin. Hevdîtina yekem belaş e; lêçûnên surprîz dernakevin."
+        },
+        {
+          question: "Otomasyona AI ji karsaziya min re guncan e?",
+          answer:
+            "Heke peyamên dubare, form, randevû an şopandina we hebe, erê. Di hevdîtinê de em bi hev re derdixin ka kîjan gav dikarin otomatîk bibin."
+        },
+        {
+          question: "Piştî weşanê piştgirî didin?",
+          answer:
+            "Erê. Ji bo lênihêrîn, nûvekirina naverokê û taybetmendiyên nû em li cem we ne; bi WhatsAppê zû digihîjin me."
+        },
+        {
+          question: "Hevdîtina yekem çawa pêş ve diçe?",
+          answer:
+            "Em hevdîtineke belaş a 30 deqîqeyî dikin: rewşa we dinêrin, pêşîniyan diyar dikin û nexşeyeke zelal derdixin."
+        },
+        {
+          question: "Hûn dikarin malpera min a heyî nû bikin?",
+          answer:
+            "Erê. Em lez, peyam, ezmûna mobîl û rêya daxwazan dinêrin; heke hewce be, wê bi zimanê marka we re xurtir ava dikin."
+        },
+        {
+          question: "Otomasyon bi kîjan amûran re dixebite?",
+          answer:
+            "Li gorî form, CRM, email, WhatsApp, salname û amûrên raporê yên we saz dikin. Armanc ew e ku kar hêsan bibe, ne ku tevlihevî zêde bibe."
+        },
+        {
+          question: "Hûn naverok û nivîsan amade dikin?",
+          answer:
+            "Erê. Em xizmet, mişteriyên armanc û xalên baweriyê zelal dikin û nivîsên malperê bi awayekî dönüşüm-odak amade dikin."
+        },
+        {
+          question: "Em dikarin tenê bi WhatsAppê pêş ve biçin?",
+          answer:
+            "Erê. Ji bo têkiliya yekem, pirsên zû û nûvekirinên kurt WhatsApp bikar tînin. Biryarên projeyê jî bi awayekî zelal û şopandinbar kurt dikin."
+        }
+      ]
     },
     contact: {
       eyebrow: "Têkilî",
@@ -390,6 +557,24 @@ export const dictionaries = {
       body: "Karsaziya xwe û hewcedariya xwe binivîse. Em bi gavên zelal vegerin.",
       call: "Hevdîtina 30 deqîqe",
       roadmap: "Plana zelal a otomasyonê",
+      servicesTitle: "Ji bo çi dikarî binivîsî?",
+      services: [
+        {
+          title: "Pêşxistina webê",
+          description:
+            "Malperên kurumsal ên bilez, mobîl-uyumlu û taybet ji bo hewcedariyên te."
+        },
+        {
+          title: "Nasnameya kurumsal",
+          description:
+            "Pergala reng, tipografî û xuyabûna marka ku karaktera te nîşan dide."
+        },
+        {
+          title: "Otomasyona AI",
+          description:
+            "Pergalên zîrek ku karên dubare kêm dikin û rêya mişteriyan rêkûpêk dikin."
+        }
+      ],
       name: "Nav",
       email: "Email",
       company: "Şirket",
@@ -399,10 +584,15 @@ export const dictionaries = {
       companyPlaceholder: "Navê şirketê",
       messagePlaceholder: "Malper, AI otomasyon, CRM, SaaS MVP...",
       submit: "Bişîne",
-      note: "Email: hello@ronivatech.com"
+      formIntro: "Silav Roniva Tech! Daxwaza hevdîtinê:",
+      formHint: "Dema bişînî, peyama te di WhatsAppê de amade dibe.",
+      note: "Email: ronivatech21@gmail.com"
     },
     footer: {
       line: "AI otomasyon, malper û pergalên xebatê ji bo karsaziyên biçûk.",
+      navHeading: "Rûpel",
+      contactHeading: "Têkilî",
+      location: "Diyarbakir, Tirkiye",
       rights: "Hemû maf parastî ne."
     }
   }
