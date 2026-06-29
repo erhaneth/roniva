@@ -16,6 +16,10 @@ const videoPreviews = [
     src: "/images/altinay-showcase.mp4",
     label: "Altınay Güzellik Merkezi web sitesi video gösterimi",
   },
+  {
+    src: "/images/ipekyolu-showcase.mp4",
+    label: "İpekyolu web sitesi video gösterimi",
+  },
 ];
 
 export function ProjectMockup({ index, accent }: ProjectMockupProps) {
@@ -33,52 +37,52 @@ export function ProjectMockup({ index, accent }: ProjectMockupProps) {
         <div className="flex items-center gap-1 border-b border-black/10 px-3 py-2">
           <span className="h-2 w-2 rounded-[4px] bg-black/20" />
           <span className="h-2 w-2 rounded-[4px] bg-black/12" />
-            <span className="h-2 w-2 rounded-[4px] bg-black/12" />
-            <span className="ml-3 h-3 w-24 rounded-[4px] bg-black/8" />
+          <span className="h-2 w-2 rounded-[4px] bg-black/12" />
+          <span className="ml-3 h-3 w-24 rounded-[4px] bg-black/8" />
+        </div>
+        {videoPreview ? (
+          <div className="p-4">
+            <div className="overflow-hidden rounded-[8px] border border-black/10 bg-black shadow-sm">
+              <video
+                className="aspect-video w-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+                aria-label={videoPreview.label}
+              >
+                <source src={videoPreview.src} type="video/mp4" />
+              </video>
+            </div>
           </div>
-          {videoPreview ? (
-            <div className="p-4">
-              <div className="overflow-hidden rounded-[8px] border border-black/10 bg-black shadow-sm">
-                <video
-                  className="aspect-video w-full object-cover"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  preload="metadata"
-                  aria-label={videoPreview.label}
-                >
-                  <source src={videoPreview.src} type="video/mp4" />
-                </video>
+        ) : (
+          <div className="grid min-h-48 gap-4 p-4 text-black sm:grid-cols-[1fr_0.72fr] lg:grid-cols-1 xl:grid-cols-[1fr_0.72fr]">
+            <div>
+              <div className="h-3 w-16 rounded-[4px]" style={{ backgroundColor: accent }} />
+              <div className="mt-4 h-6 w-4/5 rounded-[4px] bg-black" />
+              <div className="mt-2 h-6 w-3/5 rounded-[4px] bg-black" />
+              <div className="mt-4 space-y-2">
+                {bars.map((bar) => (
+                  <div key={bar} className="h-2 rounded-[4px] bg-black/8">
+                    <div className="h-2 rounded-[4px] bg-black" style={{ width: `${bar}%` }} />
+                  </div>
+                ))}
               </div>
             </div>
-          ) : (
-            <div className="grid min-h-48 gap-4 p-4 text-black sm:grid-cols-[1fr_0.72fr] lg:grid-cols-1 xl:grid-cols-[1fr_0.72fr]">
-              <div>
-                <div className="h-3 w-16 rounded-[4px]" style={{ backgroundColor: accent }} />
-                <div className="mt-4 h-6 w-4/5 rounded-[4px] bg-black" />
-                <div className="mt-2 h-6 w-3/5 rounded-[4px] bg-black" />
-                <div className="mt-4 space-y-2">
-                  {bars.map((bar) => (
-                    <div key={bar} className="h-2 rounded-[4px] bg-black/8">
-                      <div className="h-2 rounded-[4px] bg-black" style={{ width: `${bar}%` }} />
-                    </div>
-                  ))}
-                </div>
+            <div className="rounded-[8px] border border-black/10 bg-[#f7f7f7] p-3">
+              <div className="flex items-center justify-between">
+                <div className="h-8 w-8 rounded-[8px] bg-black" />
+                <div className="h-3 w-14 rounded-[4px]" style={{ backgroundColor: accent }} />
               </div>
-              <div className="rounded-[8px] border border-black/10 bg-[#f7f7f7] p-3">
-                <div className="flex items-center justify-between">
-                  <div className="h-8 w-8 rounded-[8px] bg-black" />
-                  <div className="h-3 w-14 rounded-[4px]" style={{ backgroundColor: accent }} />
-                </div>
-                <div className="mt-6 grid grid-cols-2 gap-2">
-                  <div className="h-14 rounded-[8px] bg-white" />
-                  <div className="h-14 rounded-[8px] bg-black" />
-                </div>
-                <div className="mt-3 h-14 rounded-[8px] bg-white" />
+              <div className="mt-6 grid grid-cols-2 gap-2">
+                <div className="h-14 rounded-[8px] bg-white" />
+                <div className="h-14 rounded-[8px] bg-black" />
               </div>
+              <div className="mt-3 h-14 rounded-[8px] bg-white" />
             </div>
-          )}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -137,6 +137,14 @@ export const dictionaries = {
           result: "Daha kolay randevu",
           description: "Hizmetleri öne çıkaran, mobilde hızlı çalışan ve randevuya yönlendiren deneyim.",
           tags: ["Güzellik", "Randevu", "Mobil"]
+        },
+        {
+          name: "İpekyolu",
+          href: "https://ipekyoluetlokantasi.com/",
+          type: "Kurumsal web sitesi",
+          result: "Modern dijital vitrin",
+          description: "Marka algısını güçlendiren, hizmetleri net sunan ve güven veren modern web deneyimi.",
+          tags: ["Kurumsal", "Web", "Marka"]
         }
       ]
     },
@@ -426,6 +434,14 @@ export const dictionaries = {
           result: "Rezervasyona hêsantir",
           description: "Tajrûbeyek bilez a mobil ku xizmetan derdixe pêş û mişteriyan ber bi rezervasyonê ve dibe.",
           tags: ["Xweşikî", "Rezervasyon", "Mobil"]
+        },
+        {
+          name: "İpekyolu",
+          href: "https://ipekyoluetlokantasi.com/",
+          type: "Malpera kurumsal",
+          result: "Pêşkêşkirina dijîtal a nûjen",
+          description: "Tajrûbeyek malperê ya nûjen ku baweriyê zêde dike û xizmetan bi awayek zelal pêşkêş dike.",
+          tags: ["Kurumsal", "Malper", "Marka"]
         }
       ]
     },

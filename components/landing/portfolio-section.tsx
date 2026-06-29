@@ -4,7 +4,7 @@ import { ProjectMockup } from "@/components/landing/project-mockup";
 import { SectionIntro } from "@/components/landing/section-intro";
 import type { LandingSectionProps } from "@/components/landing/types";
 
-const portfolioAccents = ["#111111", "#d6a84f", "#f0b8cf"] as const;
+const portfolioAccents = ["#111111", "#d6a84f", "#f0b8cf", "#77d6b2"] as const;
 
 export function PortfolioSection({ t }: LandingSectionProps) {
   return (
@@ -13,7 +13,7 @@ export function PortfolioSection({ t }: LandingSectionProps) {
         <Reveal>
           <SectionIntro title={t.portfolio.title} body={t.portfolio.body} />
         </Reveal>
-        <div className="mt-10 grid gap-4 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {t.portfolio.items.map((item, index) => (
             <Reveal key={item.name} delay={index * 80} className="h-full">
               <article className="group flex h-full flex-col overflow-hidden rounded-[8px] border border-black/10 bg-white shadow-sm shadow-black/[0.03] transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/[0.08]">
